@@ -55,7 +55,7 @@ public class TaskControllerTest {
             task.setDueDate(LocalDate.now().plusDays(-1));
             controller.save(task);
         } catch (ValidationException e) {
-            Assert.assertEquals("Due date must not be in past", e.getMessage());
+            Assert.assertEquals("Duee date must not be in past", e.getMessage());
         }
     }
 
